@@ -1,88 +1,60 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Shalom Software</title>
-        <meta name="author" class="Webpage">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/design.css"> 
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>      
-    </head>
-    
-    
-    <body class="Dark-theme">
-        
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Shalom Software</a>
+<<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Bootstrap Fixed Layout Example</title>
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <script src="js/bootstrap.bundle.min.js"></script>
+        </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img class="logo-img" src="img/shalomSoftware.png" height="70" width="130" >
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="main.html" class="nav-item nav-link">Home</a>
+                        <a href="contact.html"  class="nav-item nav-link">Contact</a>
+                        <a href="about.html"  class="nav-item nav-link">About</a>
+                        <a href="services.html"  class="nav-item nav-link">Service</a>
+                    </div>
+
+                    <div class="navbar-nav ms-auto">
+                         <a href="#" class="nav-item nav-link">Register</a>
+                         <a href="#" class="nav-item nav-link">Login</a>
+                    </div>
                 </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="main.html">Home</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="">Service</a></li>
-                    </ul>
-             </div>
+    </div>
         </nav>
-
-        
-    <div class="welcome-picture">   
-        <div class="mySlides-fade">
-            <div class="welcome-container">
-            <div class="numbertext">1 / 3</div>    
-            <img id="hardware-img" src="img/hardware.jpg" alt="welcome Picture" >
-            <div class="text">Fix and Boot Your Computers</div>    
-            </div>    
-        </div>    
-            <div class="mySlides-fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img/adobe.png" style="width:100%">
-                <div class="text">Download Adobe Collections</div>
-            </div>
-
-            <div class="mySlides-fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img/msOffice.png" style="width:100%">
-                <div class="text">Download MS Office 2021</div>
-            </div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-            
-        </div> 
     
-    <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+    <hr>
+        <div class="container">
+            <h1 style="text-align: center;">Welcome To Shalom Software</h1>
+        </div>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        <div class="container bg-light py-3 my-3">
+            <h1>This is a heading</h1>
+            <p>This is a paragraph of text.</p>
+        </div>
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    <hr>
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides-fade");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-        
-    
-    </body>
+
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <p>All Rigth Reserve &copy; 2023 Shalom Software</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
 </html>
